@@ -1,0 +1,14 @@
+.coverage
+.tox
+__pycache__
+*.egg
+*.egg-info
+*.pyc
+build/
+dist/
+nosetests.xml
+coverage.xml
+.idea
+venv
+*~
+.*~

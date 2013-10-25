@@ -1,0 +1,76 @@
+# Swedish translations for eduid_IdP_html.
+# Copyright (C) 2013 ORGANIZATION
+# This file is distributed under the same license as the eduid_IdP_html
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: eduid_IdP_html 0.1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2013-10-25 13:08+0200\n"
+"PO-Revision-Date: 2013-10-25 13:11+0100\n"
+"Last-Translator: Fredrik Thulin <fredrik@thulin.net>\n"
+"Language-Team: sv <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 1.3\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: eduid_IdP_html/templates/base.jinja2:6
+msgid "eduID Login"
+msgstr ""
+
+#: eduid_IdP_html/templates/base.jinja2:20
+msgid "Home"
+msgstr "Hem"
+
+#: eduid_IdP_html/templates/base.jinja2:21
+msgid "Help"
+msgstr "Hjälp"
+
+#: eduid_IdP_html/templates/login.jinja2:12
+msgid "Sign in to eduID"
+msgstr "Logga in med eduID"
+
+#: eduid_IdP_html/templates/login.jinja2:20
+msgid "Something failed, or Javascript disabled"
+msgstr "Något gick fel, eller så är Javascript avstängt"
+
+#: eduid_IdP_html/templates/login.jinja2:25
+msgid "Username :"
+msgstr "Användarnamn:"
+
+#: eduid_IdP_html/templates/login.jinja2:36
+msgid "Password :"
+msgstr "Lösenord:"
+
+#: eduid_IdP_html/templates/login.jinja2:49
+msgid "Remember me"
+msgstr "Kom ihåg mig"
+
+#: eduid_IdP_html/templates/login.jinja2:56
+msgid "Sign in"
+msgstr "Logga in"
+
+#: eduid_IdP_html/templates/login.jinja2:61
+msgid "You are logging in to {sp_entity_id} who requests {authn_reference}."
+msgstr "Du loggar in på {sp_entity_id} som begär {authn_reference}."
+
+#: eduid_IdP_html/templates/login.jinja2:64
+msgid "Don't have an account yet?"
+msgstr "Har du inget konto ännu?"
+
+#: eduid_IdP_html/templates/login.jinja2:64
+msgid "Go to the registration form"
+msgstr "Gå till registreringssidan"
+
+#: eduid_IdP_html/templates/login.jinja2:65
+msgid "Can't remember your password?"
+msgstr "Har du glömt ditt lösenord?"
+
+#: eduid_IdP_html/templates/login.jinja2:65
+msgid "Go to the reset password form"
+msgstr "Få ett nytt"
