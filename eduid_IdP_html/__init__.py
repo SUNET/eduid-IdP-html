@@ -117,6 +117,7 @@ def save_to_files(translated, output_dir, verbose):
             output_fn = os.path.join(lang_dir, template_html_fn)
             fp = open(output_fn, 'w')
             fp.write(translated[template][lang])
+            fp.write("\n")  # eof newline disappears in Jinja2 rendering
             if verbose:
                 print("Wrote {!r}".format(output_fn))
     if verbose:
