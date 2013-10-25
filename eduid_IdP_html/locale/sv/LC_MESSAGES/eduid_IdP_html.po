@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduid_IdP_html 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-10-25 13:08+0200\n"
-"PO-Revision-Date: 2013-10-25 13:11+0100\n"
+"POT-Creation-Date: 2013-10-25 17:29+0200\n"
+"PO-Revision-Date: 2013-10-25 17:33+0100\n"
 "Last-Translator: Fredrik Thulin <fredrik@thulin.net>\n"
 "Language-Team: sv <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: eduid_IdP_html/templates/base.jinja2:6
 msgid "eduID Login"
-msgstr ""
+msgstr "eduID Login"
 
 #: eduid_IdP_html/templates/base.jinja2:20
 msgid "Home"
@@ -30,6 +30,20 @@ msgstr "Hem"
 #: eduid_IdP_html/templates/base.jinja2:21
 msgid "Help"
 msgstr "Hjälp"
+
+#: eduid_IdP_html/templates/error.jinja2:10
+msgid "Server Error"
+msgstr "Serverproblem"
+
+#: eduid_IdP_html/templates/error.jinja2:12
+msgid ""
+"<p>Sorry, but the requested page is unavailable due to a server hiccup.</p>\n"
+"          <p>Our engineers have been notified already, so please try again "
+"later.</p>"
+msgstr ""
+"<p>Servern råkade dessvärre ut för ett oväntat problem.</p>\n"
+"          <p>Våra tekniker har fått en felrapport om denna händelse. Var "
+"vänlig försök igen senare.</p>"
 
 #: eduid_IdP_html/templates/login.jinja2:12
 msgid "Sign in to eduID"

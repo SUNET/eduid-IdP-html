@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduid_IdP_html 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-10-25 13:08+0200\n"
+"POT-Creation-Date: 2013-10-25 17:29+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,6 +27,17 @@ msgstr ""
 
 #: eduid_IdP_html/templates/base.jinja2:21
 msgid "Help"
+msgstr ""
+
+#: eduid_IdP_html/templates/error.jinja2:10
+msgid "Server Error"
+msgstr ""
+
+#: eduid_IdP_html/templates/error.jinja2:12
+msgid ""
+"<p>Sorry, but the requested page is unavailable due to a server hiccup.</p>\n"
+"          <p>Our engineers have been notified already, so please try again "
+"later.</p>"
 msgstr ""
 
 #: eduid_IdP_html/templates/login.jinja2:12
