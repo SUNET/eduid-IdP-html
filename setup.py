@@ -12,17 +12,18 @@ CHANGES = open(os.path.join(here, 'CHANGES.rst')).read()
 version = '0.1'
 
 requires = [
+]
+
+testing_extras = [
+    'nose==1.2.1',
+    'coverage==3.6',
+    # Trick CI to build HTML packages, so they're NOT built on the IdPs
     'Jinja2==2.7.1',
 ]
 
 if sys.version_info[0] < 3:
     # Babel does not work with Python 3
-    requires.append('Babel==1.3')
-
-testing_extras = [
-    'nose==1.2.1',
-    'coverage==3.6',
-]
+    testing_extras.append('Babel==1.3')
 
 
 class my_build_py(build_py):
@@ -31,13 +32,23 @@ class my_build_py(build_py):
     """
 
     def run(self):
-        import eduid_IdP_html
-        html_build_dir = os.path.join(self.build_lib, 'eduid_IdP_html', 'html')
-        self.mkpath(html_build_dir, mode=0755)
-        # Run eduid_IdP_html.main() to generate all translated HTMLs in the build process
-        assert(eduid_IdP_html.main(
-            verbose=True, output_dir=html_build_dir)
-        )
+        build_html = False
+        src_dir = self.get_package_dir('eduid_IdP_html')
+        stat_path = os.path.join(src_dir, 'templates')
+        try:
+            os.stat(stat_path)
+            build_html = True
+        except OSError:
+            sys.stderr.write("NOT building HTML files - could not stat {!r}\n".format(stat_path))
+            pass
+        if build_html:
+            import eduid_IdP_html
+            html_build_dir = os.path.join(self.build_lib, 'eduid_IdP_html', 'html')
+            self.mkpath(html_build_dir, mode=0755)
+            # Run eduid_IdP_html.main() to generate all translated HTMLs in the build process
+            assert(eduid_IdP_html.main(
+                verbose=True, output_dir=html_build_dir)
+            )
         build_py.run(self)
 
 
