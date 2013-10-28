@@ -19,7 +19,16 @@ if sys.version_info[0] < 3:
     # Babel does not work with Python 3
     requires.append('Babel==1.3')
 
+testing_extras = [
+    'nose==1.2.1',
+    'coverage==3.6',
+]
+
+
 class my_build_py(build_py):
+    """
+    Custom build step to generate the translated HTML pages.
+    """
 
     def run(self):
         import eduid_IdP_html
@@ -50,6 +59,7 @@ setup(
     zip_safe=False,
     install_requires=requires,
     extras_require={
+        'testing': testing_extras,
     },
     cmdclass={'build_py': my_build_py},
 )
