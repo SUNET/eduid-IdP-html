@@ -2,7 +2,6 @@ import os
 import sys
 
 from setuptools import setup, find_packages
-from distutils.command.build_py import build_py
 
 
 here = os.path.abspath(os.path.dirname(__file__))
@@ -25,32 +24,6 @@ if sys.version_info[0] < 3:
     requires.append('Babel==1.3')
 
 
-class my_build_py(build_py):
-    """
-    Custom build step to generate the translated HTML pages.
-    """
-
-    def run(self):
-        build_html = False
-        src_dir = self.get_package_dir('eduid_IdP_html')
-        stat_path = os.path.join(src_dir, 'templates')
-        try:
-            os.stat(stat_path)
-            build_html = True
-        except OSError:
-            sys.stderr.write("NOT building HTML files - could not stat {!r}\n".format(stat_path))
-            pass
-        if build_html:
-            import eduid_IdP_html
-            html_build_dir = os.path.join(self.build_lib, 'eduid_IdP_html', 'html')
-            self.mkpath(html_build_dir, mode=0755)
-            # Run eduid_IdP_html.main() to generate all translated HTMLs in the build process
-            assert(eduid_IdP_html.main(
-                verbose=True, output_dir=html_build_dir)
-            )
-        build_py.run(self)
-
-
 setup(
     name='eduid_IdP_html',
     version=version,
@@ -71,5 +44,4 @@ setup(
     extras_require={
         'testing': testing_extras,
     },
-    cmdclass={'build_py': my_build_py},
 )
