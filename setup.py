@@ -14,14 +14,11 @@ version = '0.1'
 requires = [
 ]
 
-develop_extras = [
-    # Trick CI to build HTML packages, so they're NOT built on the IdPs
-    'Jinja2==2.7.1',
-]
-
 testing_extras = [
     'nose==1.2.1',
     'coverage==3.6',
+    # Trick CI to build HTML packages, so they're NOT built on the IdPs
+    'Jinja2==2.7.1',
 ]
 
 if sys.version_info[0] < 3:
@@ -74,7 +71,6 @@ setup(
     install_requires=requires,
     extras_require={
         'testing': testing_extras,
-        'develop': develop_extras,
     },
     cmdclass={'build_py': my_build_py},
 )
