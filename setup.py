@@ -26,7 +26,7 @@ testing_extras = [
 
 if sys.version_info[0] < 3:
     # Babel does not work with Python 3
-    develop_extras.append('Babel==1.3')
+    requires.append('Babel==1.3')
 
 
 class my_build_py(build_py):
