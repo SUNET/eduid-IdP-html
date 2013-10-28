@@ -12,13 +12,12 @@ CHANGES = open(os.path.join(here, 'CHANGES.rst')).read()
 version = '0.1'
 
 requires = [
+    'Jinja2==2.7.1',
 ]
 
 testing_extras = [
     'nose==1.2.1',
     'coverage==3.6',
-    # Trick CI to build HTML packages, so they're NOT built on the IdPs
-    'Jinja2==2.7.1',
 ]
 
 if sys.version_info[0] < 3:
