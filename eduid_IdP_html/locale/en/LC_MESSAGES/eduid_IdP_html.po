@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduid_IdP_html 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-10-25 17:29+0200\n"
+"POT-Creation-Date: 2013-10-29 13:34+0100\n"
 "PO-Revision-Date: 2013-10-25 17:04+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -23,11 +23,11 @@ msgstr ""
 msgid "eduID Login"
 msgstr ""
 
-#: eduid_IdP_html/templates/base.jinja2:20
+#: eduid_IdP_html/templates/base.jinja2:19
 msgid "Home"
 msgstr ""
 
-#: eduid_IdP_html/templates/base.jinja2:21
+#: eduid_IdP_html/templates/base.jinja2:20
 msgid "Help"
 msgstr ""
 
@@ -85,5 +85,9 @@ msgstr ""
 
 #: eduid_IdP_html/templates/login.jinja2:65
 msgid "Go to the reset password form"
+msgstr ""
+
+#: eduid_IdP_html/templates/login.jinja2:83
+msgid "Incorrect username or password ({failcount} attempts)"
 msgstr ""
 
