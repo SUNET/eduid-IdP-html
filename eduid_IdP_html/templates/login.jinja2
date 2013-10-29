@@ -59,14 +59,16 @@
             </fieldset>
           </form>
           <p class="muted">{{ _("You are logging in to {sp_entity_id} who requests {authn_reference}.") }}</p>
-	  <p class="muted"></p>
+	      <p class="muted"></p>
 
           <p class="muted">{{ _("Don't have an account yet?") }} <a href="{{ settings.signup_url }}">{{ _("Go to the registration form") }} </a></p>
           <p class="muted">{{ _("Can't remember your password?") }} <a href="{{ settings.pwreset_url }}">{{  _("Go to the reset password form") }}</a></p>
         </div>
       </div>
 
-    </div>
+{% endblock %}
+
+{% block extrajs %}
     {%  raw %}
     <script type="text/javascript">
         $(function() {{
@@ -81,9 +83,6 @@
     </script>
     {% endraw %}
 
-{% endblock %}
-
-{% block extrajs %}
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src=\'{{"static/js/libs/jquery-1.9.1.min.js"}}\'><\/script>')</script>
     <script src="{{'/static/js/libs/bootstrap-2.3.1.min.js'}}"></script>
