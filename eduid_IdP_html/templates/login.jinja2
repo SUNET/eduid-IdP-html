@@ -69,6 +69,10 @@
 {% endblock %}
 
 {% block extrajs %}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src=\'{{"static/js/libs/jquery-1.9.1.min.js"}}\'><\/script>')</script>
+    <script src="{{'/static/js/libs/bootstrap-2.3.1.min.js'}}"></script>
+
     {%  raw %}
     <script type="text/javascript">
         $(function() {{
@@ -82,8 +86,4 @@
         }});
     </script>
     {% endraw %}
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src=\'{{"static/js/libs/jquery-1.9.1.min.js"}}\'><\/script>')</script>
-    <script src="{{'/static/js/libs/bootstrap-2.3.1.min.js'}}"></script>
 {% endblock %}
