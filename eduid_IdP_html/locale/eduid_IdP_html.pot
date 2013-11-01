@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduid_IdP_html 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-10-29 13:34+0100\n"
+"POT-Creation-Date: 2013-11-01 10:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -86,5 +86,16 @@ msgstr ""
 
 #: eduid_IdP_html/templates/login.jinja2:83
 msgid "Incorrect username or password ({failcount} attempts)"
+msgstr ""
+
+#: eduid_IdP_html/templates/session_timeout.jinja2:10
+msgid "Already logged in"
+msgstr ""
+
+#: eduid_IdP_html/templates/session_timeout.jinja2:12
+msgid ""
+"<p>You are already logged in.</p>\n"
+"          <p>If you got here by pressing 'back' in your browser,\n"
+"              you can press 'forward' to return to where you came from.</p>"
 msgstr ""
 
