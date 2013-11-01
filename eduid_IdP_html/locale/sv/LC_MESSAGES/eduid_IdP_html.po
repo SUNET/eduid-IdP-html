@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduid_IdP_html 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-01 10:38+0100\n"
-"PO-Revision-Date: 2013-11-01 10:41+0100\n"
+"POT-Creation-Date: 2013-11-01 10:45+0100\n"
+"PO-Revision-Date: 2013-11-01 10:46+0100\n"
 "Last-Translator: Fredrik Thulin <fredrik@thulin.net>\n"
 "Language-Team: sv <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -18,6 +18,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
 "X-Generator: Poedit 1.5.4\n"
+
+#: eduid_IdP_html/templates/base.jinja2:2
+msgid "en"
+msgstr "sv"
 
 #: eduid_IdP_html/templates/base.jinja2:6
 msgid "eduID Login"
