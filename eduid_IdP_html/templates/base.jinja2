@@ -11,6 +11,7 @@
     <![endif]-->
 
     <link href="{{'/static/css/bootstrap-2.3.1.min.css'}}" rel="stylesheet" media="screen">
+    <link href="{{'/static/css/screen.css'}}" rel="stylesheet" media="screen">
   </head>
   <body>
     <div class="container">
@@ -19,7 +20,7 @@
           <li class="{% block nav_class_home %}{% endblock %}"><a href="#">{{ _("Home") }}</a></li>
           <li class="{% block nav_class_help %}{% endblock %}"><a href="#">{{ _("Help") }}</a></li>
         </ul>
-        <h3 class="muted"><a href="#">eduID</a></h3>
+        <img src="{{'/static/img/logo_eduID_g_color.svg'}}" alt="Logotype"/>
       </div>
       {% block contents %}
 
