@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduid_IdP_html 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-01 10:45+0100\n"
+"POT-Creation-Date: 2013-11-21 15:17+0100\n"
 "PO-Revision-Date: 2013-10-25 17:04+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -27,11 +27,11 @@ msgstr ""
 msgid "eduID Login"
 msgstr ""
 
-#: eduid_IdP_html/templates/base.jinja2:19
+#: eduid_IdP_html/templates/base.jinja2:20
 msgid "Home"
 msgstr ""
 
-#: eduid_IdP_html/templates/base.jinja2:20
+#: eduid_IdP_html/templates/base.jinja2:21
 msgid "Help"
 msgstr ""
 
@@ -48,7 +48,7 @@ msgid ""
 msgstr ""
 
 #: eduid_IdP_html/templates/login.jinja2:12
-msgid "Sign in to eduID"
+msgid "Log in with eduID"
 msgstr ""
 
 #: eduid_IdP_html/templates/login.jinja2:20
@@ -56,42 +56,34 @@ msgid "Something failed, or Javascript disabled"
 msgstr ""
 
 #: eduid_IdP_html/templates/login.jinja2:25
-msgid "Username :"
+msgid "Email :"
 msgstr ""
 
 #: eduid_IdP_html/templates/login.jinja2:36
 msgid "Password :"
 msgstr ""
 
-#: eduid_IdP_html/templates/login.jinja2:49
+#: eduid_IdP_html/templates/login.jinja2:43
+msgid "Forgot your password?"
+msgstr ""
+
+#: eduid_IdP_html/templates/login.jinja2:51
 msgid "Remember me"
 msgstr ""
 
-#: eduid_IdP_html/templates/login.jinja2:56
-msgid "Sign in"
+#: eduid_IdP_html/templates/login.jinja2:59
+msgid "Log in"
 msgstr ""
 
-#: eduid_IdP_html/templates/login.jinja2:61
+#: eduid_IdP_html/templates/login.jinja2:62
+msgid "Sign up"
+msgstr ""
+
+#: eduid_IdP_html/templates/login.jinja2:69
 msgid "You are logging in to {sp_entity_id} who requests {authn_reference}."
 msgstr ""
 
-#: eduid_IdP_html/templates/login.jinja2:64
-msgid "Don't have an account yet?"
-msgstr ""
-
-#: eduid_IdP_html/templates/login.jinja2:64
-msgid "Go to the registration form"
-msgstr ""
-
-#: eduid_IdP_html/templates/login.jinja2:65
-msgid "Can't remember your password?"
-msgstr ""
-
-#: eduid_IdP_html/templates/login.jinja2:65
-msgid "Go to the reset password form"
-msgstr ""
-
-#: eduid_IdP_html/templates/login.jinja2:83
+#: eduid_IdP_html/templates/login.jinja2:89
 msgid "Incorrect username or password ({failcount} attempts)"
 msgstr ""
 
@@ -106,4 +98,25 @@ msgid ""
 "              you can press 'forward' to return to where you came "
 "from.</p>"
 msgstr ""
+
+#~ msgid "Sign in to eduID"
+#~ msgstr ""
+
+#~ msgid "Username :"
+#~ msgstr ""
+
+#~ msgid "Sign in"
+#~ msgstr ""
+
+#~ msgid "Don't have an account yet?"
+#~ msgstr ""
+
+#~ msgid "Go to the registration form"
+#~ msgstr ""
+
+#~ msgid "Can't remember your password?"
+#~ msgstr ""
+
+#~ msgid "Go to the reset password form"
+#~ msgstr ""
 
