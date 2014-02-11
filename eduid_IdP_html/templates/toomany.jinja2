@@ -1,0 +1,18 @@
+{% extends "base.jinja2" %}
+
+{% block nav_class_home %}active{% endblock %}
+
+{% block contents %}
+
+      <div class="row">
+        <div class="span8 offset2 well">
+
+          <legend class="">{{ _("Too many requests") }} ({error_code})</legend>
+
+          {% trans %}
+          <p>Access cannot be granted at this time. Please try again later.</p>{% endtrans %}
+
+        </div>
+      </div>
+
+{% endblock %}
