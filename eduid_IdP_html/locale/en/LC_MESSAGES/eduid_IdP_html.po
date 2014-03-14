@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduid_IdP_html 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-21 15:17+0100\n"
+"POT-Creation-Date: 2014-03-14 14:13+0100\n"
 "PO-Revision-Date: 2013-10-25 17:04+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -28,10 +28,6 @@ msgid "eduID Login"
 msgstr ""
 
 #: eduid_IdP_html/templates/base.jinja2:20
-msgid "Home"
-msgstr ""
-
-#: eduid_IdP_html/templates/base.jinja2:21
 msgid "Help"
 msgstr ""
 
@@ -45,6 +41,29 @@ msgid ""
 "hiccup.</p>\n"
 "          <p>Our engineers have been notified already, so please try "
 "again later.</p>"
+msgstr ""
+
+#: eduid_IdP_html/templates/forbidden.jinja2:10
+msgid "Access denied"
+msgstr ""
+
+#: eduid_IdP_html/templates/forbidden.jinja2:12
+msgid ""
+"\n"
+"          <p>Access to the requested service could not be granted.\n"
+"              The service might have requested a 'confirmed' identity.</p>"
+msgstr ""
+
+#: eduid_IdP_html/templates/forbidden.jinja2:16
+msgid "Visit the"
+msgstr ""
+
+#: eduid_IdP_html/templates/forbidden.jinja2:17
+msgid "eduID dashboard"
+msgstr ""
+
+#: eduid_IdP_html/templates/forbidden.jinja2:18
+msgid "to confirm your identity."
 msgstr ""
 
 #: eduid_IdP_html/templates/login.jinja2:12
@@ -67,23 +86,19 @@ msgstr ""
 msgid "Forgot your password?"
 msgstr ""
 
-#: eduid_IdP_html/templates/login.jinja2:51
-msgid "Remember me"
-msgstr ""
-
-#: eduid_IdP_html/templates/login.jinja2:59
+#: eduid_IdP_html/templates/login.jinja2:50
 msgid "Log in"
 msgstr ""
 
-#: eduid_IdP_html/templates/login.jinja2:62
+#: eduid_IdP_html/templates/login.jinja2:53
 msgid "Sign up"
 msgstr ""
 
-#: eduid_IdP_html/templates/login.jinja2:69
+#: eduid_IdP_html/templates/login.jinja2:60
 msgid "You are logging in to {sp_entity_id} who requests {authn_reference}."
 msgstr ""
 
-#: eduid_IdP_html/templates/login.jinja2:89
+#: eduid_IdP_html/templates/login.jinja2:80
 msgid "Incorrect username or password ({failcount} attempts)"
 msgstr ""
 
@@ -97,6 +112,17 @@ msgid ""
 "          <p>If you got here by pressing 'back' in your browser,\n"
 "              you can press 'forward' to return to where you came "
 "from.</p>"
+msgstr ""
+
+#: eduid_IdP_html/templates/toomany.jinja2:10
+msgid "Too many requests"
+msgstr ""
+
+#: eduid_IdP_html/templates/toomany.jinja2:12
+msgid ""
+"\n"
+"          <p>Access cannot be granted at this time. Please try again "
+"later.</p>"
 msgstr ""
 
 #~ msgid "Sign in to eduID"
@@ -118,5 +144,11 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Go to the reset password form"
+#~ msgstr ""
+
+#~ msgid "Home"
+#~ msgstr ""
+
+#~ msgid "Remember me"
 #~ msgstr ""
 

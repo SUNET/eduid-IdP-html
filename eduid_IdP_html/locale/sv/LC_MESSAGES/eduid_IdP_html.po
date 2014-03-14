@@ -1,24 +1,25 @@
-# Translations template for eduid_IdP_html.
-# Copyright (C) 2013 ORGANIZATION
-# This file is distributed under the same license as the eduid_IdP_html project.
-# 
+# Swedish translations for eduid_IdP_html.
+# Copyright (C) 2014 ORGANIZATION
+# This file is distributed under the same license as the eduid_IdP_html
+# project.
+#
 # Translators:
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2013
-# ft, 2013
+# ft, 2013-2014
 msgid ""
 msgstr ""
-"Project-Id-Version: eduid-IdP-html\n"
+"Project-Id-Version:  eduid-IdP-html\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-21 15:17+0100\n"
-"PO-Revision-Date: 2013-11-21 14:24+0000\n"
+"POT-Creation-Date: 2014-03-14 14:13+0100\n"
+"PO-Revision-Date: 2014-03-14 13:19+0000\n"
 "Last-Translator: ft\n"
-"Language-Team: Swedish (http://www.transifex.com/projects/p/eduid-idp-html/language/sv/)\n"
+"Language-Team: Swedish (http://www.transifex.com/projects/p/eduid-idp-"
+"html/language/sv/)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
-"Language: sv\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: eduid_IdP_html/templates/base.jinja2:2
 msgid "en"
@@ -29,10 +30,6 @@ msgid "eduID Login"
 msgstr "eduID Login"
 
 #: eduid_IdP_html/templates/base.jinja2:20
-msgid "Home"
-msgstr "Hem"
-
-#: eduid_IdP_html/templates/base.jinja2:21
 msgid "Help"
 msgstr "Hjälp"
 
@@ -42,9 +39,40 @@ msgstr "Serverproblem"
 
 #: eduid_IdP_html/templates/error.jinja2:12
 msgid ""
-"<p>Sorry, but the requested page is unavailable due to a server hiccup.</p>\n"
-"          <p>Our engineers have been notified already, so please try again later.</p>"
-msgstr "<p>Servern råkade dessvärre ut för ett oväntat problem.</p>\n          <p>Våra tekniker har fått en felrapport om denna händelse. Var vänlig försök igen senare.</p>"
+"<p>Sorry, but the requested page is unavailable due to a server "
+"hiccup.</p>\n"
+"          <p>Our engineers have been notified already, so please try "
+"again later.</p>"
+msgstr ""
+"<p>Servern råkade dessvärre ut för ett oväntat problem.</p>\n"
+"          <p>Våra tekniker har fått en felrapport om denna händelse. Var "
+"vänlig försök igen senare.</p>"
+
+#: eduid_IdP_html/templates/forbidden.jinja2:10
+msgid "Access denied"
+msgstr "Åtkomst nekad"
+
+#: eduid_IdP_html/templates/forbidden.jinja2:12
+msgid ""
+"\n"
+"          <p>Access to the requested service could not be granted.\n"
+"              The service might have requested a 'confirmed' identity.</p>"
+msgstr ""
+"\n"
+"<p>Åtkomst till den begärda tjänsten medges ej.\n"
+"Tjänsten kan ha begärt en 'bekräftad' identitet.</p>"
+
+#: eduid_IdP_html/templates/forbidden.jinja2:16
+msgid "Visit the"
+msgstr "Gå till"
+
+#: eduid_IdP_html/templates/forbidden.jinja2:17
+msgid "eduID dashboard"
+msgstr "eduID dashboard"
+
+#: eduid_IdP_html/templates/forbidden.jinja2:18
+msgid "to confirm your identity."
+msgstr "för att bekräfta din identitet."
 
 #: eduid_IdP_html/templates/login.jinja2:12
 msgid "Log in with eduID"
@@ -66,23 +94,19 @@ msgstr "Lösenord:"
 msgid "Forgot your password?"
 msgstr "Glömt ditt lösenord?"
 
-#: eduid_IdP_html/templates/login.jinja2:51
-msgid "Remember me"
-msgstr "Kom ihåg mig"
-
-#: eduid_IdP_html/templates/login.jinja2:59
+#: eduid_IdP_html/templates/login.jinja2:50
 msgid "Log in"
 msgstr "Logga in"
 
-#: eduid_IdP_html/templates/login.jinja2:62
+#: eduid_IdP_html/templates/login.jinja2:53
 msgid "Sign up"
 msgstr "Skapa konto"
 
-#: eduid_IdP_html/templates/login.jinja2:69
+#: eduid_IdP_html/templates/login.jinja2:60
 msgid "You are logging in to {sp_entity_id} who requests {authn_reference}."
 msgstr "Du loggar in på {sp_entity_id} som begär {authn_reference}."
 
-#: eduid_IdP_html/templates/login.jinja2:89
+#: eduid_IdP_html/templates/login.jinja2:80
 msgid "Incorrect username or password ({failcount} attempts)"
 msgstr "Ogiltigt användarnamn eller lösenord ({failcount} försök)"
 
@@ -94,5 +118,24 @@ msgstr "Redan inloggad"
 msgid ""
 "<p>You are already logged in.</p>\n"
 "          <p>If you got here by pressing 'back' in your browser,\n"
-"              you can press 'forward' to return to where you came from.</p>"
-msgstr "<p>Du är redan inloggad.</p>\n          <p>Om du kom hit genom att klicka 'bakåt' i din webbläsare kan du             klicka 'framåt' igen för att återvända dit du kom ifrån.</p>"
+"              you can press 'forward' to return to where you came "
+"from.</p>"
+msgstr ""
+"<p>Du är redan inloggad.</p>\n"
+"          <p>Om du kom hit genom att klicka 'bakåt' i din webbläsare kan "
+"du             klicka 'framåt' igen för att återvända dit du kom "
+"ifrån.</p>"
+
+#: eduid_IdP_html/templates/toomany.jinja2:10
+msgid "Too many requests"
+msgstr "För många förfrågningar"
+
+#: eduid_IdP_html/templates/toomany.jinja2:12
+msgid ""
+"\n"
+"          <p>Access cannot be granted at this time. Please try again "
+"later.</p>"
+msgstr ""
+"\n"
+"<p>Åtkomst kunde inte medges just nu. Var vänlig försök igen senare.</p>"
+
