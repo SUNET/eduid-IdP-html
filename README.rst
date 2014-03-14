@@ -16,8 +16,12 @@ To update translations :
 
   $ python setup.py extract_messages
   $ python setup.py update_catalog
+
   upload eduid_IdP_html/locale/eduid_IdP_html.pot to Transifex
   translate in Transifex
   download and replace the updated language file
+
+  $ python setup.py update_catalog
+  $ python setup.py compile_catalog
 
 Fredrik Thulin, 2013-10-25
