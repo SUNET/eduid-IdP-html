@@ -11,7 +11,7 @@ CHANGES = open(os.path.join(here, 'CHANGES.rst')).read()
 version = '0.1'
 
 requires = [
-    'Jinja2==2.7.1',
+    'Jinja2==2.7.2',
 ]
 
 testing_extras = [
