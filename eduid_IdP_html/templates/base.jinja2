@@ -21,13 +21,16 @@
           <li class="{% block nav_class_help %}{% endblock %}"><a href="#">{{ _("Help") }}</a></li>
         </ul>
         <img src="{{'/static/img/logo_eduID_g_color.svg'}}" alt="Logotype"/>
+        <a href="http://www.sunet.se/">
+              <img src="{{'eduiddashboard:static/img/SUNET_badge.png'|static_url}}" alt="SUNET logotype"/>
+        </a>
       </div>
       {% block contents %}
 
       {% endblock %}
       <div class="clearfix"></div>
       <div class="footer">
-        <p>&copy; SUNET 2013</p>
+        <p>&copy; SUNET 2013-2014</p>
       </div>
     </div>
     {% block extrajs %}
