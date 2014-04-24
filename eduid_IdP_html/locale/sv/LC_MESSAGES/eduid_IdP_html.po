@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduid-IdP-html\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-04-24 10:52+0200\n"
-"PO-Revision-Date: 2014-04-24 10:49+0000\n"
+"POT-Creation-Date: 2014-04-24 13:45+0200\n"
+"PO-Revision-Date: 2014-04-24 11:46+0000\n"
 "Last-Translator: ft\n"
 "Language-Team: Swedish (http://www.transifex.com/projects/p/eduid-idp-html/language/sv/)\n"
 "MIME-Version: 1.0\n"
@@ -29,8 +29,8 @@ msgid "eduID Login"
 msgstr "eduID Login"
 
 #: eduid_IdP_html/templates/base.jinja2:21
-msgid "static/help-en.html"
-msgstr "static/help-sv.html"
+msgid "/static/help-en.html"
+msgstr "/static/help-sv.html"
 
 #: eduid_IdP_html/templates/base.jinja2:21
 msgid "Help"

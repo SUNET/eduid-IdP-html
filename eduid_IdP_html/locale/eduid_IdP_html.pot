@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: eduid_IdP_html 0.2.3-dev\n"
+"Project-Id-Version: eduid_IdP_html 0.2.3\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-04-24 10:52+0200\n"
+"POT-Creation-Date: 2014-04-24 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgid "eduID Login"
 msgstr ""
 
 #: eduid_IdP_html/templates/base.jinja2:21
-msgid "static/help-en.html"
+msgid "/static/help-en.html"
 msgstr ""
 
 #: eduid_IdP_html/templates/base.jinja2:21
