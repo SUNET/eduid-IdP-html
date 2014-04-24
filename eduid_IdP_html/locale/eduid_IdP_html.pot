@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: eduid_IdP_html 0.1\n"
+"Project-Id-Version: eduid_IdP_html 0.2.3-dev\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-03-14 14:13+0100\n"
+"POT-Creation-Date: 2014-04-24 10:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,11 @@ msgstr ""
 msgid "eduID Login"
 msgstr ""
 
-#: eduid_IdP_html/templates/base.jinja2:20
+#: eduid_IdP_html/templates/base.jinja2:21
+msgid "static/help-en.html"
+msgstr ""
+
+#: eduid_IdP_html/templates/base.jinja2:21
 msgid "Help"
 msgstr ""
 
@@ -67,35 +71,35 @@ msgstr ""
 msgid "Log in with eduID"
 msgstr ""
 
-#: eduid_IdP_html/templates/login.jinja2:20
+#: eduid_IdP_html/templates/login.jinja2:23
 msgid "Something failed, or Javascript disabled"
 msgstr ""
 
-#: eduid_IdP_html/templates/login.jinja2:25
+#: eduid_IdP_html/templates/login.jinja2:28
 msgid "Email :"
 msgstr ""
 
-#: eduid_IdP_html/templates/login.jinja2:36
+#: eduid_IdP_html/templates/login.jinja2:39
 msgid "Password :"
 msgstr ""
 
-#: eduid_IdP_html/templates/login.jinja2:43
+#: eduid_IdP_html/templates/login.jinja2:46
 msgid "Forgot your password?"
 msgstr ""
 
-#: eduid_IdP_html/templates/login.jinja2:50
+#: eduid_IdP_html/templates/login.jinja2:53
 msgid "Log in"
 msgstr ""
 
-#: eduid_IdP_html/templates/login.jinja2:53
+#: eduid_IdP_html/templates/login.jinja2:56
 msgid "Sign up"
 msgstr ""
 
-#: eduid_IdP_html/templates/login.jinja2:60
+#: eduid_IdP_html/templates/login.jinja2:63
 msgid "You are logging in to {sp_entity_id} who requests {authn_reference}."
 msgstr ""
 
-#: eduid_IdP_html/templates/login.jinja2:80
+#: eduid_IdP_html/templates/login.jinja2:83
 msgid "Incorrect username or password ({failcount} attempts)"
 msgstr ""
 
