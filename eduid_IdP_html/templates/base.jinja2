@@ -10,7 +10,7 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="{{'/static/css/bootstrap-2.3.1.min.css'}}" rel="stylesheet" media="screen">
+    <link href="{{'/static/css/bootstrap-3.2.0.min.css'}}" rel="stylesheet" media="screen">
     <link href="{{'/static/css/screen.css'}}" rel="stylesheet" media="screen">
     <link href="{{'/static/favicon.ico'}}" rel="shortcut icon" />
   </head>
@@ -28,9 +28,12 @@
               <img src="{{'/static/img/SUNET_badge.png'}}" alt="SUNET logotype"/>
         </a>
       </div>
-      {% block contents %}
+      <div class="clearfix"></div>
+      <div id="content-block">
+        {% block contents %}
 
-      {% endblock %}
+        {% endblock %}
+      </div>
       <div class="clearfix"></div>
       <div class="footer">
         <p>&copy; SUNET 2013-2014</p>
@@ -38,7 +41,7 @@
     </div>
 
     <script src="{{'/static/js/libs/jquery-1.9.1.min.js'}}"></script>
-    <script src="{{'/static/js/libs/bootstrap-2.3.1.min.js'}}"></script>
+    <script src="{{'/static/js/libs/bootstrap-3.2.0.min.js'}}"></script>
 
     {% block extrajs %}
     {% endblock %}

@@ -58,6 +58,8 @@ def translate_templates(env, loader, settings, verbose=False, debug=False):
         env.install_gettext_translations(translations)
 
         for template_file in loader.list_templates():
+            if template_file.endswith('.swp'):
+                continue
             template = env.get_template(template_file)
             translated = template.render(settings=settings)
 
