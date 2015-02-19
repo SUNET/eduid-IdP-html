@@ -22,39 +22,40 @@
                 <a class="close" data-dismiss="alert" href="#">&times;</a>
                 <div id="alert_msg">{{ _("Something failed, or Javascript disabled") }}</div>
               </div>
-
-              <div class="control-group">
-              <!-- Username -->
-                <label class="control-label" for="username">{{ _("Email :") }}</label>
-                <div class="controls">
-                  <div class="input-append">
-                    <input type="text" id="username" name="username" value="{username!s}" placeholder="" class="input-large" autofocus="autofocus">
-                    <span class="add-on"><i class="icon-user"></i></span>
-                  </div>
+              <div class="col-md-6 col-md-offset-3">
+                <div class="control-group">
+                <!-- Username -->
+                    <label class="control-label" for="username">{{ _("Email :") }}</label>
+                    <div class="controls">
+                    <div class="input-append">
+                        <input type="text" id="username" name="username" value="{username!s}" placeholder="" class="input-large" autofocus="autofocus">
+                        <span class="add-on"><i class="icon-user"></i></span>
+                    </div>
+                    </div>
                 </div>
-              </div>
 
-              <div class="control-group">
-              <!-- Password-->
-                <label class="control-label" for="password">{{ _("Password :") }}</label>
-                <div class="controls">
-                  <div class="input-append">
-                    <input type="password" id="password" name="password" placeholder="" class="input-large">
-                    <span class="add-on"><i class="icon-lock"></i></span>
-                  </div>
-                   </p>
-                  <a href="{{ settings.pwreset_url }}">{{ _("Forgot your password?") }}</a>
+                <div class="control-group">
+                <!-- Password-->
+                    <label class="control-label" for="password">{{ _("Password :") }}</label>
+                    <div class="controls">
+                    <div class="input-append">
+                        <input type="password" id="password" name="password" placeholder="" class="input-large">
+                        <span class="add-on"><i class="icon-lock"></i></span>
+                    </div>
+                    </p>
+                    <a class="forgot-password" href="{{ settings.pwreset_url }}">{{ _("Forgot your password?") }}</a>
+                    </div>
                 </div>
-              </div>
 
-              <div class="form-actions" style="margin-bottom: 0;">
-              <!-- Button -->
-                <span>
-                    <button class="btn btn-primary btn-large">{{ _("Log in") }}</button>
-                </span>
-                <span>
-                    <a class="btn btn-warning btn-large" href="{{ settings.signup_url }}" target="_blank">{{ _("Sign up") }}</a>
-                </span>
+                <div class="form-actions" style="margin-bottom: 0;">
+                <!-- Button -->
+                    <span>
+                        <button class="btn btn-primary btn-large">{{ _("Log in") }}</button>
+                    </span>
+                    <span>
+                        <a class="btn btn-warning btn-large" href="{{ settings.signup_url }}" target="_blank">{{ _("Sign up") }}</a>
+                    </span>
+                </div>
               </div>
 
             </fieldset>

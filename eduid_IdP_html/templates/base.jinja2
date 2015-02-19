@@ -10,30 +10,56 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="{{'/static/css/bootstrap-2.3.1.min.css'}}" rel="stylesheet" media="screen">
+    <link href="{{'/static/css/bootstrap-3.2.0.min.css'}}" rel="stylesheet" media="screen">
     <link href="{{'/static/css/screen.css'}}" rel="stylesheet" media="screen">
+    <link href="{{'/static/css/login.css'}}" rel="stylesheet" />
     <link href="{{'/static/favicon.ico'}}" rel="shortcut icon" />
   </head>
   <body>
     <div class="container">
-      <div class="masthead">
-        <ul class="nav nav-pills pull-right">
-          <li class="{% block nav_class_help %}{% endblock %}">
-              <a href="{{  _("/static/help-en.html") }}" target="_blank">{{ _("Help") }}</a></li>
-        </ul>
-      <a href="https://www.eduid.se/">
-        <img src="{{'/static/img/logo_eduID_g_color.svg'}}" alt="Logotype"/>
-      </a>
-        <a href="http://www.sunet.se/">
-              <img src="{{'/static/img/SUNET_badge.png'}}" alt="SUNET logotype"/>
-        </a>
-      </div>
+        <header id="header" class="header">
+            <div class="logo">
+
+            </div>
+            <div id="mobile-nav">
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <!-- Menu reflects the menu on eduid.se (not yet updated) with links and title -->
+                    <li>
+                        <a href="/">Student</a>
+                    </li>
+                    <li>
+                        <a href="/">Tekniker</a>
+                    </li>
+                    <li>
+                        <a href="/">Personal</a>
+                    </li>
+                    <li>
+                        <a href="/">Faq</a>
+                    </li>
+                </ul>
+                <div class="buttons">
+                    <div class="button orange">
+                        <!-- Link leads to signup page -->
+                        <a href="https://signup.eduid.se/">Skapa konto</a>
+                    </div>
+                    <div class="button white-border">
+                        <!-- Link leads to login page -->
+                        <a href="https://dashboard.eduid.se/">Logga in</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    
+
       {% block contents %}
 
       {% endblock %}
       <div class="clearfix"></div>
       <div class="footer">
-        <p>&copy; SUNET 2013-2014</p>
+        <p>&copy; SUNET 2015</p>
       </div>
     </div>
 
