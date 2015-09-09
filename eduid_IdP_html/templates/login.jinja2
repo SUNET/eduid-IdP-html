@@ -5,11 +5,11 @@
 {% block contents %}
 
     <div class="row" xmlns="http://www.w3.org/1999/html">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-12">
 
           <form class="form-horizontal well well-large" action='{action!s}' method="POST">
             <fieldset>
-              <legend class="">{{ _("Log in with eduID") }}</legend>
+              <legend class="">{{ _("eduID login") }}</legend>
 
               <input type="hidden" name="key" value="{key!s}"/>
               <input type="hidden" name="SAMLRequest" value="{SAMLRequest!s}"/>
@@ -23,33 +23,34 @@
                 <div id="alert_msg">{{ _("Something failed, or Javascript disabled") }}</div>
               </div>
 
-              <div class="row">
                 <div class="col-md-offset-3 col-md-6">
 
-                  <div class="form-group">
+                  <div class="control-group">
                   <!-- Username -->
                     <label class="control-label" for="username">{{ _("Email :") }}</label>
-                    <div class="input-group">
-                      <input type="text" id="username" name="username" value="{username!s}" placeholder="" class="form-control" autofocus="autofocus">
-                      <div class="input-group-addon"><i class="glyphicon glyphicon-user"></i></div>
+                    <div class="controls">
+                      <div class="input-append">
+                        <input type="text" id="username" name="username" value="{username!s}" placeholder="" class="input-large" autofocus="autofocus">
+                      </div>
                     </div>
                   </div>
     
-                  <div class="form-group">
+                  <div class="control-group">
                   <!-- Password-->
                     <label class="control-label" for="password">{{ _("Password :") }}</label>
-                      <div class="input-group">
-                        <input type="password" id="password" name="password" placeholder="" class="form-control">
-                        <div class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></div>
+                      <div class="controls">
+                        <div class="input-append">
+                          <input type="password" id="password" name="password" placeholder="" class="input-large">
+                        </div>
                       </div>
-                       </p>
-                      <a href="{{ settings.pwreset_url }}">{{ _("Forgot your password?") }}</a>
+                      <p></p>
+                      <a class="forgot-password" href="{{ settings.pwreset_url }}">{{ _("Forgot your password?") }}</a>
                   </div>
     
                   <div class="form-actions" style="margin-bottom: 0;">
                   <!-- Button -->
                     <span>
-                        <button class="btn btn-primary btn-lg">{{ _("Log in") }}</button>
+                        <button class="btn btn-primary btn-lg">{{ _("Sign in") }}</button>
                     </span>
                     <span>
                         <a class="btn btn-warning btn-lg" href="{{ settings.signup_url }}" target="_blank">{{ _("Sign up") }}</a>
@@ -57,7 +58,6 @@
                   </div>
 
                 </div>
-              </div>
             </fieldset>
           </form>
 <!-- disabled in pilot
