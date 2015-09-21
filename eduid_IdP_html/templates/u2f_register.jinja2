@@ -1,0 +1,47 @@
+{% extends "base.jinja2" %}
+
+{% block nav_class_home %}active{% endblock %}
+
+{% block contents %}
+
+    <div class="row" xmlns="http://www.w3.org/1999/html">
+        <div class="col-md-8 col-md-offset-2">
+
+          <form class="form-horizontal well well-large" action='{action!s}' method="POST" onsubmit="return false;">
+            <fieldset>
+              <legend class="">{{ _("Touch your U2F token") }}</legend>
+                <input type="hidden" name="tokenResponse" id="tokenResponse"/>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+
+{% endblock %}
+
+{% block extrajs %}
+
+    {% raw %}
+    <script src="{{'/static/js/libs/u2f-api.js'}}"></script>
+    <script type="text/javascript">
+        $(function() {{
+            //u2f
+            var request = JSON.parse({data!s});
+            setTimeout(function() {
+            u2f.register(request.registerRequests, request.authenticateRequests,
+            function(data) {
+                var form = document.getElementById('form');
+                var reg = document.getElementById('tokenResponse');
+                if(data.errorCode) {
+                    alert("U2F failed with error: " + data.errorCode);
+                    return;
+                }
+                reg.value=JSON.stringify(data);
+                form.submit();
+                });
+            }, 1000);
+
+        }})
+    </script>
+    {% endraw %}
+
+{% endblock %}
