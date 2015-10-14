@@ -27,26 +27,26 @@
           <div class="collapse navbar-collapse text-center" id="eduid-idp-menu">
             <ul  class="nav navbar-nav">
               <li>
-                <a href="/">{{ _("Student") }}</a>
+                <a href="{{ settings.student_link }}">{{ _("Student") }}</a>
               </li>
               <li>
-                <a href="/">{{ _("Technician") }}</a>
+                <a href="{{ settings.technician_link }}">{{ _("Technicians") }}</a>
               </li>
               <li>
-                <a href="/">{{ _("Personal") }}</a>
+                <a href="{{ settings.staff_link }}">{{ _("Staff") }}</a>
               </li>
               <li>
-                <a href="/">{{ _("FAQ") }}</a>
+                <a href="{{ settings.faq_link }}">{{ _("FAQ") }}</a>
               </li>
             </ul>
             <div class="buttons nav navbar-nav navbar-right">
               <div class="button orange">
                       <!-- Link leads to signup page -->
-                <a href="https://signup.eduid.se/">{{ _("Sign up") }}</a>
+                <a href="{{ settings.signup_link }}>{{ _("Sign up") }}</a>
               </div>
                 <div class="button white-border">
                       <!-- Link leads to login page -->
-                  <a href="https://dashboard.eduid.se/">{{ _("Sign in") }}</a>
+                  <a href="{{ settings.dashboard_link }}">{{ _("Sign in") }}</a>
                 </div>
               </div>
             </div>
