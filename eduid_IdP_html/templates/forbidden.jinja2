@@ -4,7 +4,6 @@
 
 {% block contents %}
 
-      <div id="content-block">
         <div class="jumbotron">
 
           <legend class="">{{ _("Access denied") }} ({error_code})</legend>
@@ -12,12 +11,11 @@
           {% trans %}
           <p>Access to the requested service could not be granted.
               The service might have requested a 'confirmed' identity.</p>{% endtrans %}
-
-          {{  _("Visit the") }}
-          <a href="{{ settings.dashboard_link }}">{{ _("eduID dashboard") }}</a>
-          {{  _("to confirm your identity.") }}
-
+          <p>
+              {{  _("Visit the") }}
+              <a href="{{ settings.dashboard_link }}">{{ _("eduID dashboard") }}</a>
+              {{  _("to confirm your identity.") }}
+          </p>
         </div>
-      </div>
 
 {% endblock %}
