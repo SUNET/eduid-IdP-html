@@ -6,7 +6,7 @@ to the internationalization (i18n) work.
 
 This package _does_ use a templating engine (Jinja2) with i18n support.
 The HTML files that will be served by eduid-IdP are generated in the
-setup.py build stage from the Jinja2 templates ineduid_IdP_html/templates/.
+setup.py build stage from the Jinja2 templates in eduid_IdP_html/templates/.
 
 While this is not a super-elegant solution, it allows us to translate
 the eduid-IdP HTML pages in the same way we translate everything else,
