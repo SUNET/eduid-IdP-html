@@ -1,3 +1,8 @@
+#!/bin/bash
+
+echo "This is the build script for eduid-IdP-html"
+echo ""
+
 set -x
 set -e
 
@@ -85,4 +90,5 @@ ls -l dist/*.tar.gz dist/*.egg || ls -l
 find . -name coverage.xml -ls
 find . -name nosetests.xml -ls
 
-
+echo ""
+echo "$0: Completed"
