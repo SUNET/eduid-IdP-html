@@ -1,19 +1,20 @@
 # Swedish translations for eduid_IdP_html.
-# Copyright (C) 2014 ORGANIZATION
+# Copyright (C) 2019 ORGANIZATION
 # This file is distributed under the same license as the eduid_IdP_html
 # project.
 #
 # Translators:
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2013
-# ft, 2013-2014
+# Fredrik Thulin, 2013-2014,2019
+# Johan Lundberg <lundberg.johan@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version:  eduid-IdP-html\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2019-01-08 14:28+0100\n"
-"PO-Revision-Date: 2014-04-24 11:46+0000\n"
-"Last-Translator: ft\n"
-"Language-Team: Swedish (http://www.transifex.com/projects/p/eduid-idp-"
+"PO-Revision-Date: 2019-01-08 13:48+0000\n"
+"Last-Translator: Fredrik Thulin\n"
+"Language-Team: Swedish (http://www.transifex.com/sunet/eduid-idp-"
 "html/language/sv/)\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
@@ -27,23 +28,23 @@ msgstr "sv"
 
 #: eduid_IdP_html/templates/base.jinja2:6
 msgid "eduID Login"
-msgstr "eduID Login"
+msgstr "eduID-inloggning"
 
 #: eduid_IdP_html/templates/base.jinja2:30
 msgid "Student"
-msgstr ""
+msgstr "Student"
 
 #: eduid_IdP_html/templates/base.jinja2:33
 msgid "Technicians"
-msgstr ""
+msgstr "Tekniker"
 
 #: eduid_IdP_html/templates/base.jinja2:36
 msgid "Staff"
-msgstr ""
+msgstr "Anställd"
 
 #: eduid_IdP_html/templates/base.jinja2:39
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: eduid_IdP_html/templates/base.jinja2:45
 #: eduid_IdP_html/templates/login.jinja2:56
@@ -52,13 +53,12 @@ msgstr "Skapa konto"
 
 #: eduid_IdP_html/templates/base.jinja2:49
 #: eduid_IdP_html/templates/login.jinja2:53
-#, fuzzy
 msgid "Sign in"
 msgstr "Logga in"
 
 #: eduid_IdP_html/templates/credential_expired.jinja2:9
 msgid "Credential expired"
-msgstr ""
+msgstr "Lösenord/säkerhetsnyckel har gått ut"
 
 #: eduid_IdP_html/templates/credential_expired.jinja2:11
 msgid ""
@@ -69,11 +69,15 @@ msgid ""
 "necessary.</p>\n"
 "\t  "
 msgstr ""
+"\n"
+"          <p>Lösenordet/säkerhetsnyckeln har gått ut eftersom den inte "
+"har använts på 18 månader.</p>\n"
+"\t  <p>Begär en lösenordsåterställning för att komma åt kontot igen.</p>\n"
+"\t  "
 
 #: eduid_IdP_html/templates/credential_expired.jinja2:19
-#, fuzzy
 msgid "Reset password"
-msgstr "Glömt ditt lösenord?"
+msgstr "Återställ lösenord"
 
 #: eduid_IdP_html/templates/error.jinja2:9
 msgid "Server Error"
@@ -86,9 +90,8 @@ msgid ""
 "          <p>Our engineers have been notified already, so please try "
 "again later.</p>"
 msgstr ""
-"<p>Servern råkade dessvärre ut för ett oväntat problem.</p>\n"
-"          <p>Våra tekniker har fått en felrapport om denna händelse. Var "
-"vänlig försök igen senare.</p>"
+"<p>Sidan kunde inte visas på grund av ett serverproblem.</p>\n"
+"<p>Våra tekniker är informerade, var god försök senare.</p>"
 
 #: eduid_IdP_html/templates/forbidden.jinja2:9
 #: eduid_IdP_html/templates/mfa_required.jinja2:9
@@ -123,9 +126,8 @@ msgid "to confirm your identity."
 msgstr "för att bekräfta din identitet."
 
 #: eduid_IdP_html/templates/login.jinja2:12
-#, fuzzy
 msgid "eduID login"
-msgstr "eduID Login"
+msgstr "eduID inloggning"
 
 #: eduid_IdP_html/templates/login.jinja2:23
 msgid "Something failed, or Javascript disabled"
@@ -152,7 +154,6 @@ msgid "Incorrect username or password ({failcount} attempts)"
 msgstr "Ogiltigt användarnamn eller lösenord ({failcount} försök)"
 
 #: eduid_IdP_html/templates/mfa_required.jinja2:11
-#, fuzzy
 msgid ""
 "\n"
 "          <p>Access to the requested service could not be granted.\n"
@@ -160,12 +161,13 @@ msgid ""
 "          </p>"
 msgstr ""
 "\n"
-"<p>Åtkomst till den begärda tjänsten medges ej.\n"
-"Tjänsten kan ha begärt en 'bekräftad' identitet.</p>"
+"          <p>Åtkomst till den begärda tjänsten kunde inte medges.\n"
+"              Tjänsten kräver användande av en säkerhetsnyckel (MFA).\n"
+"          </p>"
 
 #: eduid_IdP_html/templates/mfa_required.jinja2:18
 msgid "to register a Security Key (on the Security tab)."
-msgstr ""
+msgstr "för att registrera en säkerhetsnyckel (på fliken Säkerhet)"
 
 #: eduid_IdP_html/templates/session_timeout.jinja2:9
 msgid "Already logged in"
@@ -184,7 +186,6 @@ msgstr ""
 "ifrån.</p>"
 
 #: eduid_IdP_html/templates/swamid_mfa_required.jinja2:11
-#, fuzzy
 msgid ""
 "\n"
 "          <p>Access to the requested service could not be granted.\n"
@@ -193,12 +194,14 @@ msgid ""
 "          </p>"
 msgstr ""
 "\n"
-"<p>Åtkomst till den begärda tjänsten medges ej.\n"
-"Tjänsten kan ha begärt en 'bekräftad' identitet.</p>"
+"          <p>Åtkomst till den begärda tjänsten kunde inte medges.\n"
+"              Tjänsten kräver användande av en 'bekräftad' "
+"säkerhetsnyckel (SWAMID MFA/MFA HI).\n"
+"          </p>"
 
 #: eduid_IdP_html/templates/swamid_mfa_required.jinja2:18
 msgid "to confirm your Security Key (on the Security tab)."
-msgstr ""
+msgstr "för att bekräfta din säkerhetsnyckel (på fliken Säkerhet)."
 
 #: eduid_IdP_html/templates/toomany.jinja2:9
 msgid "Too many requests"
@@ -214,9 +217,8 @@ msgstr ""
 "<p>Åtkomst kunde inte medges just nu. Var vänlig försök igen senare.</p>"
 
 #: eduid_IdP_html/templates/unauthorized.jinja2:9
-#, fuzzy
 msgid "Username or password incorrect"
-msgstr "Ogiltigt användarnamn eller lösenord ({failcount} försök)"
+msgstr "Felaktigt användarnamn eller lösenord"
 
 #: eduid_IdP_html/templates/unauthorized.jinja2:11
 msgid ""
@@ -225,13 +227,8 @@ msgid ""
 " you do not remember\n"
 "              your username or password.</p>"
 msgstr ""
-
-#~ msgid "/static/help-en.html"
-#~ msgstr "/static/help-sv.html"
-
-#~ msgid "Help"
-#~ msgstr "Hjälp"
-
-#~ msgid "Log in with eduID"
-#~ msgstr "Logga in med eduID"
+"<p>Var vänlig försök igen.</p>\n"
+"          <p>Det finns en länk (Glömt ditt lösenord?) på loginsidan om du"
+" inte kommer ihåg\n"
+"              ditt lösenord.</p>"
 

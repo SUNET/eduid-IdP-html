@@ -1,18 +1,20 @@
 # English translations for eduid_IdP_html.
-# Copyright (C) 2013 ORGANIZATION
+# Copyright (C) 2019 ORGANIZATION
 # This file is distributed under the same license as the eduid_IdP_html
 # project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
 #
-#, fuzzy
+# Translators:
+# Alvin Toh <mralvintoh@gmail.com>, 2015
+# Fredrik Thulin, 2019
 msgid ""
 msgstr ""
-"Project-Id-Version: eduid_IdP_html 0.1\n"
+"Project-Id-Version:  eduid-IdP-html\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2019-01-08 14:28+0100\n"
-"PO-Revision-Date: 2013-10-25 17:04+0200\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: en <LL@li.org>\n"
+"PO-Revision-Date: 2019-01-08 13:49+0000\n"
+"Last-Translator: Fredrik Thulin\n"
+"Language-Team: English (United States) (http://www.transifex.com/sunet"
+"/eduid-idp-html/language/en_US/)\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -21,41 +23,41 @@ msgstr ""
 
 #: eduid_IdP_html/templates/base.jinja2:2
 msgid "en"
-msgstr ""
+msgstr "en"
 
 #: eduid_IdP_html/templates/base.jinja2:6
 msgid "eduID Login"
-msgstr ""
+msgstr "eduID Login"
 
 #: eduid_IdP_html/templates/base.jinja2:30
 msgid "Student"
-msgstr ""
+msgstr "Student"
 
 #: eduid_IdP_html/templates/base.jinja2:33
 msgid "Technicians"
-msgstr ""
+msgstr "Technicians"
 
 #: eduid_IdP_html/templates/base.jinja2:36
 msgid "Staff"
-msgstr ""
+msgstr "Staff"
 
 #: eduid_IdP_html/templates/base.jinja2:39
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: eduid_IdP_html/templates/base.jinja2:45
 #: eduid_IdP_html/templates/login.jinja2:56
 msgid "Sign up"
-msgstr ""
+msgstr "Sign up"
 
 #: eduid_IdP_html/templates/base.jinja2:49
 #: eduid_IdP_html/templates/login.jinja2:53
 msgid "Sign in"
-msgstr ""
+msgstr "Sign in"
 
 #: eduid_IdP_html/templates/credential_expired.jinja2:9
 msgid "Credential expired"
-msgstr ""
+msgstr "Credential expired"
 
 #: eduid_IdP_html/templates/credential_expired.jinja2:11
 msgid ""
@@ -66,14 +68,20 @@ msgid ""
 "necessary.</p>\n"
 "\t  "
 msgstr ""
+"\n"
+"          <p>The password has expired, because it had not been used in 18"
+" months.</p>\n"
+"\t  <p>To regain access to the account, a reset of the credential is "
+"necessary.</p>\n"
+"\t  "
 
 #: eduid_IdP_html/templates/credential_expired.jinja2:19
 msgid "Reset password"
-msgstr ""
+msgstr "Reset password"
 
 #: eduid_IdP_html/templates/error.jinja2:9
 msgid "Server Error"
-msgstr ""
+msgstr "Server Error"
 
 #: eduid_IdP_html/templates/error.jinja2:13
 msgid ""
@@ -82,12 +90,16 @@ msgid ""
 "          <p>Our engineers have been notified already, so please try "
 "again later.</p>"
 msgstr ""
+"<p>Sorry, but the requested page is unavailable due to a server "
+"hiccup.</p>\n"
+"          <p>Our engineers have been notified already, so please try "
+"again later.</p>"
 
 #: eduid_IdP_html/templates/forbidden.jinja2:9
 #: eduid_IdP_html/templates/mfa_required.jinja2:9
 #: eduid_IdP_html/templates/swamid_mfa_required.jinja2:9
 msgid "Access denied"
-msgstr ""
+msgstr "Access denied"
 
 #: eduid_IdP_html/templates/forbidden.jinja2:11
 msgid ""
@@ -95,50 +107,53 @@ msgid ""
 "          <p>Access to the requested service could not be granted.\n"
 "              The service might have requested a 'confirmed' identity.</p>"
 msgstr ""
+"\n"
+"          <p>Access to the requested service could not be granted.\n"
+"              The service might have requested a 'confirmed' identity.</p>"
 
 #: eduid_IdP_html/templates/forbidden.jinja2:15
 #: eduid_IdP_html/templates/mfa_required.jinja2:16
 #: eduid_IdP_html/templates/swamid_mfa_required.jinja2:16
 msgid "Visit the"
-msgstr ""
+msgstr "Visit the"
 
 #: eduid_IdP_html/templates/forbidden.jinja2:16
 #: eduid_IdP_html/templates/mfa_required.jinja2:17
 #: eduid_IdP_html/templates/swamid_mfa_required.jinja2:17
 msgid "eduID dashboard"
-msgstr ""
+msgstr "eduID dashboard"
 
 #: eduid_IdP_html/templates/forbidden.jinja2:17
 msgid "to confirm your identity."
-msgstr ""
+msgstr "to confirm your identity."
 
 #: eduid_IdP_html/templates/login.jinja2:12
 msgid "eduID login"
-msgstr ""
+msgstr "eduID login"
 
 #: eduid_IdP_html/templates/login.jinja2:23
 msgid "Something failed, or Javascript disabled"
-msgstr ""
+msgstr "Something failed, or JavaScript disabled"
 
 #: eduid_IdP_html/templates/login.jinja2:30
 msgid "Email :"
-msgstr ""
+msgstr "Email:"
 
 #: eduid_IdP_html/templates/login.jinja2:40
 msgid "Password :"
-msgstr ""
+msgstr "Password:"
 
 #: eduid_IdP_html/templates/login.jinja2:47
 msgid "Forgot your password?"
-msgstr ""
+msgstr "Forgot your password?"
 
 #: eduid_IdP_html/templates/login.jinja2:64
 msgid "You are logging in to {sp_entity_id} who requests {authn_reference}."
-msgstr ""
+msgstr "You are logging in to {sp_entity_id} who requests {authn_reference}."
 
 #: eduid_IdP_html/templates/login.jinja2:81
 msgid "Incorrect username or password ({failcount} attempts)"
-msgstr ""
+msgstr "Incorrect username or password ({failcount} attempts)"
 
 #: eduid_IdP_html/templates/mfa_required.jinja2:11
 msgid ""
@@ -147,14 +162,18 @@ msgid ""
 "              The service provider requires use of a Security Key (MFA).\n"
 "          </p>"
 msgstr ""
+"\n"
+"          <p>Access to the requested service could not be granted.\n"
+"              The service provider requires use of a Security Key (MFA).\n"
+"          </p>"
 
 #: eduid_IdP_html/templates/mfa_required.jinja2:18
 msgid "to register a Security Key (on the Security tab)."
-msgstr ""
+msgstr "to register a Security Key (on the Security tab)."
 
 #: eduid_IdP_html/templates/session_timeout.jinja2:9
 msgid "Already logged in"
-msgstr ""
+msgstr "Already logged in"
 
 #: eduid_IdP_html/templates/session_timeout.jinja2:11
 msgid ""
@@ -163,6 +182,10 @@ msgid ""
 "              you can press 'forward' to return to where you came "
 "from.</p>"
 msgstr ""
+"<p>You are already logged in.</p>\n"
+"          <p>If you got here by pressing 'back' in your browser,\n"
+"              you can press 'forward' to return to where you came "
+"from.</p>"
 
 #: eduid_IdP_html/templates/swamid_mfa_required.jinja2:11
 msgid ""
@@ -172,14 +195,19 @@ msgid ""
 " Key (SWAMID MFA/MFA HI).\n"
 "          </p>"
 msgstr ""
+"\n"
+"          <p>Access to the requested service could not be granted.\n"
+"              The service provider requires use of a 'confirmed' Security"
+" Key (SWAMID MFA/MFA HI).\n"
+"          </p>"
 
 #: eduid_IdP_html/templates/swamid_mfa_required.jinja2:18
 msgid "to confirm your Security Key (on the Security tab)."
-msgstr ""
+msgstr "to confirm your Security Key (on the Security tab)."
 
 #: eduid_IdP_html/templates/toomany.jinja2:9
 msgid "Too many requests"
-msgstr ""
+msgstr "Too many requests"
 
 #: eduid_IdP_html/templates/toomany.jinja2:11
 msgid ""
@@ -187,10 +215,13 @@ msgid ""
 "          <p>Access cannot be granted at this time. Please try again "
 "later.</p>"
 msgstr ""
+"\n"
+"          <p>Access could not be granted at this time. Please try again "
+"later.</p>"
 
 #: eduid_IdP_html/templates/unauthorized.jinja2:9
 msgid "Username or password incorrect"
-msgstr ""
+msgstr "Username or password incorrect"
 
 #: eduid_IdP_html/templates/unauthorized.jinja2:11
 msgid ""
@@ -199,46 +230,8 @@ msgid ""
 " you do not remember\n"
 "              your username or password.</p>"
 msgstr ""
-
-#~ msgid "Sign in to eduID"
-#~ msgstr ""
-
-#~ msgid "Username :"
-#~ msgstr ""
-
-#~ msgid "Sign in"
-#~ msgstr ""
-
-#~ msgid "Don't have an account yet?"
-#~ msgstr ""
-
-#~ msgid "Go to the registration form"
-#~ msgstr ""
-
-#~ msgid "Can't remember your password?"
-#~ msgstr ""
-
-#~ msgid "Go to the reset password form"
-#~ msgstr ""
-
-#~ msgid "Home"
-#~ msgstr ""
-
-#~ msgid "Remember me"
-#~ msgstr ""
-
-#~ msgid "static/help-en.html"
-#~ msgstr ""
-
-#~ msgid "/static/help-en.html"
-#~ msgstr ""
-
-#~ msgid "Help"
-#~ msgstr ""
-
-#~ msgid "Log in with eduID"
-#~ msgstr ""
-
-#~ msgid "Log in"
-#~ msgstr ""
+"<p>Please try again.</p>\n"
+"          <p>There is a link (Forgot your password?) on the login page if"
+" you do not remember\n"
+"              your password.</p>"
 
