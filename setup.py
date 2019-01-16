@@ -11,6 +11,7 @@ CHANGES = open(os.path.join(here, 'CHANGES.rst')).read()
 version = '0.2.10'
 
 requires = [
+    'six==1.12.0',
     'Jinja2==2.7.3',
 ]
 

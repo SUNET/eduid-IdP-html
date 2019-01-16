@@ -5,7 +5,7 @@ Generate static HTML files for eduid-IdP in all supported languages.
 import os
 import sys
 import pkg_resources
-import ConfigParser
+from six.moves import configparser
 
 from jinja2 import Environment, PackageLoader
 from babel.support import Translations
@@ -86,9 +86,9 @@ def load_settings(resource_name='settings.ini'):
     :param resource_name: string, name of package resource to load.
     :return: dict with settings
     """
-    config = ConfigParser.ConfigParser(_CONFIG_DEFAULTS)
-    config_fp = pkg_resources.resource_stream(__name__, resource_name)
-    config.readfp(config_fp, resource_name)
+    config = configparser.ConfigParser(_CONFIG_DEFAULTS)
+    config_str = pkg_resources.resource_string(__name__, resource_name)
+    config.read_string(config_str.decode('utf8'), resource_name)
     settings = {}
     for section in config.sections():
         for option in config.options(section):
@@ -118,7 +118,7 @@ def save_to_files(translated, output_dir, verbose):
                 os.mkdir(lang_dir)
             output_fn = os.path.join(lang_dir, template_html_fn)
             fp = open(output_fn, 'w')
-            fp.write(translated[template][lang])
+            fp.write(translated[template][lang].decode('utf8'))
             fp.write("\n")  # eof newline disappears in Jinja2 rendering
             if verbose:
                 print("Wrote {!r}".format(output_fn))
