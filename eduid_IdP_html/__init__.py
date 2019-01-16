@@ -87,12 +87,11 @@ def load_settings(resource_name='settings.ini'):
     :param resource_name: string, name of package resource to load.
     :return: dict with settings
     """
+    config = configparser.ConfigParser(_CONFIG_DEFAULTS)
     if six.PY2:
-        config = configparser.ConfigParser(_CONFIG_DEFAULTS)
         config_fp = pkg_resources.resource_stream(__name__, resource_name)
         config.readfp(config_fp, resource_name)
     else:
-        config = configparser.ConfigParser(_CONFIG_DEFAULTS)
         config_str = pkg_resources.resource_string(__name__, resource_name)
         config.read_string(config_str.decode('utf8'), resource_name)
     settings = {}
