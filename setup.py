@@ -13,6 +13,7 @@ version = '0.2.10'
 requires = [
     'six==1.12.0',
     'Jinja2==2.7.3',
+    'Babel==2.6.0',
 ]
 
 testing_extras = [
@@ -20,9 +21,9 @@ testing_extras = [
     'coverage==3.6',
 ]
 
-if sys.version_info[0] < 3:
-    # Babel does not work with Python 3
-    requires.append('Babel==1.3')
+#if sys.version_info[0] < 3:
+#    # Babel does not work with Python 3
+#    requires.append('Babel==1.3')
 
 
 setup(
