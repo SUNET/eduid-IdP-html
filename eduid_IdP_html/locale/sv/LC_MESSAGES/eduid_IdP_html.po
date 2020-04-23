@@ -1,19 +1,20 @@
 # Swedish translations for eduid_IdP_html.
-# Copyright (C) 2019 ORGANIZATION
+# Copyright (C) 2020 ORGANIZATION
 # This file is distributed under the same license as the eduid_IdP_html
 # project.
 #
 # Translators:
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2013
 # Fredrik Thulin, 2013-2014,2019
+# Johan Lundberg <lundberg.johan@gmail.com>, 2020
 # Johan Lundberg <lundberg.johan@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version:  eduid-IdP-html\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-03-25 13:26+0100\n"
-"PO-Revision-Date: 2019-01-08 13:48+0000\n"
-"Last-Translator: Fredrik Thulin\n"
+"POT-Creation-Date: 2020-04-23 13:13+0200\n"
+"PO-Revision-Date: 2020-04-23 11:24+0000\n"
+"Last-Translator: Johan Lundberg <lundberg.johan@gmail.com>\n"
 "Language: sv\n"
 "Language-Team: Swedish (http://www.transifex.com/sunet/eduid-idp-"
 "html/language/sv/)\n"
@@ -24,16 +25,16 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: eduid_IdP_html/templates/bad_request.jinja2:9
-#, fuzzy
-#| msgid "Too many requests"
 msgid "Bad Request"
-msgstr "För många förfrågningar"
+msgstr ""
 
 #: eduid_IdP_html/templates/bad_request.jinja2:11
 msgid ""
 "<p>The login request could not be processed.</p>\n"
 "          <p>Try emptying the browsers cache and re-initiate login.</p>"
 msgstr ""
+"<p>Inloggningen kunde inte hanteras.</p>\n"
+"<p>Töm webbläsarcachen och försök logga in igen.</p>"
 
 #: eduid_IdP_html/templates/base.jinja2:2
 msgid "en"
@@ -189,7 +190,7 @@ msgstr ""
 
 #: eduid_IdP_html/templates/not_found.jinja2:11
 msgid "<p>The requested resource could not be found.</p>"
-msgstr ""
+msgstr "<p>Den efterfrågade resursen kunde inte hittas.</p>"
 
 #: eduid_IdP_html/templates/session_timeout.jinja2:9
 msgid "Already logged in"
@@ -256,13 +257,9 @@ msgstr ""
 
 #: eduid_IdP_html/templates/user_terminated.jinja2:9
 msgid "User terminated"
-msgstr ""
+msgstr "Användaren borttagen"
 
 #: eduid_IdP_html/templates/user_terminated.jinja2:11
-#, fuzzy
-#| msgid "" "\n" "          <p>The password has expired, because it had not
-#| been used in 18" " months.</p>\n" "\t  <p>To regain access to the account, a
-#| reset of the credential is " "necessary.</p>\n" "\t  "
 msgid ""
 "\n"
 "          <p>This user account has been terminated.</p>\n"
@@ -271,8 +268,7 @@ msgid ""
 "\t  "
 msgstr ""
 "\n"
-"          <p>Lösenordet/säkerhetsnyckeln har gått ut eftersom den inte "
-"har använts på 18 månader.</p>\n"
-"\t  <p>Begär en lösenordsåterställning för att komma åt kontot igen.</p>\n"
-"\t  "
+"<p>Det här användarkontot är borttaget.</p>\n"
+"\t<p>För att kunna logga in igen så måste lösenordet återställas.</p>\n"
+"\t"
 
