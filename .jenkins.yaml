@@ -1,7 +1,14 @@
 builders:
   - script
 script:
-  - ./build.sh
+  - "python3.7 -m venv venv"
+  - ". venv/bin/activate"
+  - "pip install -U setuptools wheel mypy pytest"
+  - "python ./setup.py develop --index-url https://pypi.sunet.se/simple"
+  - "pip freeze"
+  - "pytest"
+  - "python generate-html-files eduid_IdP_html/html"
+  - "python ./setup.py sdist install"
 publish_over_ssh:
   - pypi.sunet.se
 slack:
