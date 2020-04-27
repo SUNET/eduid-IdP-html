@@ -29,7 +29,7 @@ fi
 
 cd $WORKSPACE
 export VIRTUAL_ENV="$WORKSPACE/venv_${BUILD_NUMBER}"
-virtualenv --no-site-packages $VIRTUAL_ENV
+virtualenv -p python3 --no-site-packages $VIRTUAL_ENV
 export PIP_DOWNLOAD_CACHE=/var/cache/jenkins/pip
 export PIP_INDEX_URL=https://pypi.sunet.se/simple/
 
