@@ -12,7 +12,7 @@ version = '0.2.10'
 
 requires = [
     'six==1.12.0',
-    'Jinja2==2.10.1',
+    'Jinja2==2.11.3',
     'Babel==2.6.0',
 ]
 
